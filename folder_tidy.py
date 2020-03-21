@@ -1,5 +1,4 @@
 import os
-from pathlib import Path as P
 
 def folder_tidy(source: str):
     counter = 1
