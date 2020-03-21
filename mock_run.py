@@ -1,5 +1,5 @@
-from script import run
-from folder_tidy import folder_tidy
+import main
+from pathlib import Path as P
 
 prefix_input = 'playground/input/'
 prefix_result = 'playground/result/'
@@ -12,9 +12,8 @@ data = [
         ]
 
 for entry in data:
-    print(f"Mock work in {entry[0]}")
-    run(entry[0], entry[1])
-    print(f"Removing empty folders from {entry[0]}")
-    folder_tidy(entry[0])
+    current = P(entry[0])
+    print(f"Mock work in {current.name}")
+    main.run(entry[0], entry[1])
     print()
 

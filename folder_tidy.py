@@ -1,6 +1,6 @@
 import os
 
-def folder_tidy(source: str):
+def run(source: str):
     counter = 1
 
     while counter > 0:
